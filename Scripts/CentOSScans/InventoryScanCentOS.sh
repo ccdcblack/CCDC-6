@@ -176,3 +176,4 @@ iptables -L
 echo
 echo "'/etc/hosts' File Contents"
 echo
+cat /etc/hosts
