@@ -138,12 +138,12 @@ echo
 echo "Routing Table"
 echo "-------------"
 echo
-ip route show all                                #Get the routing table
+ip route show all                           #Get the routing table
 echo
 echo "Interface Statistics"
 echo "--------------------"
 echo
-ip -s link                                #Get interface statistics
+ip -s link                                	#Get interface statistics
 echo
 echo
 echo "Ports & Services"
@@ -155,18 +155,18 @@ echo
 echo "Listening Ports"
 echo "---------------"
 echo
-ss -taulpe                                   #Get tcp,udp,listening,process i$
+ss -taulpe                                  #Get tcp,udp,listening,process i$
 echo
 echo
 echo
 echo "Open Network Sockets"
 echo "--------------------"
-lsof -i                                   #List open socket files
+lsof -i                                   	#List open socket files
 echo
 echo "Network Stat's by Protocol"
 echo "--------------------------"
 echo
-ss -s                                #Get network statistics by protocol
+ss -s                                		#Get network statistics by protocol
 echo
 echo
 echo "Firewall Rules"
@@ -176,3 +176,4 @@ iptables -L
 echo
 echo "'/etc/hosts' File Contents"
 echo
+cat /etc/hosts
